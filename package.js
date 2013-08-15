@@ -5,5 +5,5 @@ Package.describe({
 Npm.depends({Faker: "0.5.11"});
 
 Package.on_use(function (api) {
-    api.add_files('.npm/node_modules/Faker/MinFaker.js', 'client');
+    api.add_files('.npm/package/node_modules/Faker/MinFaker.js', 'client');
 });
