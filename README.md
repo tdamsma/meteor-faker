@@ -5,11 +5,6 @@ Faker.js packaged for Meteor. Generate massive amounts of fake data
 
 Documentation: https://github.com/Marak/Faker.js
 
-## Donating
-[![Support via Gittip][gittip-badge]][digilord]
-
-[gittip-badge]: https://rawgithub.com/digilord/gittip-badge/master/dist/gittip.png
-[digilord]: https://www.gittip.com/digilord/
 
 ## License
 ###This package
@@ -37,3 +32,28 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ###Faker.js
 https://github.com/Marak/Faker.js/blob/master/MIT-LICENSE.txt
+
+
+## Donating
+By donating you are supporting this package and its developer so that he may continue to bring you updates to this and other software he maintains.
+
+[![Support via Gittip][gittip-badge]][digilord]
+
+[gittip-badge]: https://rawgithub.com/digilord/gittip-badge/master/dist/gittip.png
+[digilord]: https://www.gittip.com/digilord/
+
+<script src="http://coinwidget.com/widget/coin.js"></script>
+<script>
+CoinWidgetCom.go({
+	wallet_address: "1HBNFkpRs3dkagXryvhkgfPcdPHNWHMf26"
+	, currency: "bitcoin"
+	, counter: "count"
+	, alignment: "bl"
+	, qrcode: true
+	, auto_show: false
+	, lbl_button: "Donate"
+	, lbl_address: "My Bitcoin Address:"
+	, lbl_count: "donations"
+	, lbl_amount: "BTC"
+});
+</script>
