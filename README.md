@@ -42,3 +42,8 @@ By donating you are supporting this package and its developer so that he may con
 [gittip-badge]: https://rawgithub.com/digilord/gittip-badge/master/dist/gittip.png
 [digilord]: https://www.gittip.com/digilord/
 
+[![Support us via BTC][btc-badge]][btc-donation]
+
+[btc-badge]: https://rawgithub.com/digilord/bitcoin-badge/master/BC_Rnd_64px.png
+[btc-donation]: bitcoin:18v4QHDGZFfYdjvr2iCGVwKxA6UDK8KNSm?amount=0.05&label=DigiLords%20Projects
+
