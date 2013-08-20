@@ -42,18 +42,3 @@ By donating you are supporting this package and its developer so that he may con
 [gittip-badge]: https://rawgithub.com/digilord/gittip-badge/master/dist/gittip.png
 [digilord]: https://www.gittip.com/digilord/
 
-<script src="http://coinwidget.com/widget/coin.js"></script>
-<script>
-CoinWidgetCom.go({
-	wallet_address: "1HBNFkpRs3dkagXryvhkgfPcdPHNWHMf26"
-	, currency: "bitcoin"
-	, counter: "count"
-	, alignment: "bl"
-	, qrcode: true
-	, auto_show: false
-	, lbl_button: "Donate"
-	, lbl_address: "My Bitcoin Address:"
-	, lbl_count: "donations"
-	, lbl_amount: "BTC"
-});
-</script>
