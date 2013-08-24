@@ -3,6 +3,6 @@
     "description": "Faker.js packaged for Meteor. Generate massive amounts of fake data",
     "homepage": "https://github.com/digilord/meteor-faker",
     "author": "DigiLord",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "git": "https://github.com/digilord/meteor-faker.git"
 }
