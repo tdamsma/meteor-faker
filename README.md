@@ -3,7 +3,37 @@ meteor-faker
 
 Faker.js packaged for Meteor. Generate massive amounts of fake data
 
-Documentation: https://github.com/Marak/Faker.js
+Faker Documentation: https://github.com/Marak/Faker.js
+
+### Installation
+ Make sure you have meteorite installed.
+ 
+     [sudo] npm install -g meteorite
+     
+ Install Faker
+ 
+     mrt add Faker.js
+
+### Meteor Usage
+When using Faker on the server you need to add the `Npm.require(...)` line.  On the client that line is not needed.
+
+	// Create in 25 fake users.
+	var Faker = Npm.require('Faker'); // Only needed in server code.
+	if(Meteor.users.find().count() < 25){
+		_.each(_.range(25), function(){
+			var randomEmail = Faker.Internet.email();
+			var randomName = Faker.Name.findName();
+			var userName = Faker.Internet.userName();
+			Accounts.createUser({
+				username: userName,
+				profile: {
+					name: randomName,
+				},
+				email: randomEmail,
+				password: 'password'
+			});
+		});
+	}
 
 
 ## License
