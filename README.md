@@ -3,7 +3,7 @@ meteor-faker
 
 faker.js packaged for Meteor. Generate massive amounts of fake data
 
-faker Documentation: [https://github.com/Marak/faker.js]()
+faker Documentation: [https://github.com/Marak/faker.js](https://github.com/Marak/faker.js)
 
 ### Installation
      
