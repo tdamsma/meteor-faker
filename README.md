@@ -3,17 +3,17 @@ meteor-faker
 
 faker.js packaged for Meteor. Generate massive amounts of fake data
 
-faker Documentation: https://github.com/Marak/faker.js
+faker Documentation: [https://github.com/Marak/faker.js]()
 
 ### Installation
      
- Install faker
+ Install `digilord:faker`
  
      meteor add digilord:faker
 
 ### Meteor Usage (server only)
-When using faker on the server you need to add the `Npm.require(...)` line.
 
+```
 	// Create in 25 fake users.
 	var faker = Npm.require('faker');
 	// If the user count ever falls below 25 this code will
@@ -35,6 +35,7 @@ When using faker on the server you need to add the `Npm.require(...)` line.
 	    });
 	  });
 	}
+```
 
 ---
 ## License
