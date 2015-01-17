@@ -1,47 +1,48 @@
 meteor-faker
 ============
 
-Faker.js packaged for Meteor. Generate massive amounts of fake data
+faker.js packaged for Meteor. Generate massive amounts of fake data
 
-Faker Documentation: https://github.com/Marak/Faker.js
+faker Documentation: https://github.com/Marak/faker.js
 
 ### Installation
- Make sure you have meteorite installed.
- 
-     [sudo] npm install -g meteorite
      
- Install Faker
+ Install faker
  
-     mrt add Faker.js
+     meteor add digilord:faker
 
-### Meteor Usage
-When using Faker on the server you need to add the `Npm.require(...)` line.  On the client that line is not needed.
+### Meteor Usage (server only)
+When using faker on the server you need to add the `Npm.require(...)` line.
 
 	// Create in 25 fake users.
-	var Faker = Npm.require('Faker'); // Only needed in server code.
+	var faker = Npm.require('faker');
+	// If the user count ever falls below 25 this code will
+	// make sure that you ALWAYS have 25 fresh users to
+	// do with what you will. Be sure to place this
+	// in your Meteor.startup or a Tracker.deps block
 	if(Meteor.users.find().count() < 25){
-		_.each(_.range(25), function(){
-			var randomEmail = Faker.Internet.email();
-			var randomName = Faker.Name.findName();
-			var userName = Faker.Internet.userName();
-			Accounts.createUser({
-				username: userName,
-				profile: {
-					name: randomName,
-				},
-				email: randomEmail,
-				password: 'password'
-			});
-		});
+	  _.each(_.range(25), function(){
+	    var randomEmail = faker.Internet.email();
+	    var randomName = faker.Name.findName();
+	    var userName = faker.Internet.userName();
+	    Accounts.createUser({
+	      username: userName,
+	      profile: {
+	        name: randomName,
+	      },
+	      email: randomEmail,
+	      password: 'password'
+	    });
+	  });
 	}
 
-
+---
 ## License
-###This package
 
+### This Package
 The MIT License (MIT)
 
-Copyright (c) 2013 D. Allen Morrigan
+Copyright &copy; 2015 D. Allen Morrigan
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -60,16 +61,17 @@ COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-###Faker.js
-https://github.com/Marak/Faker.js/blob/master/MIT-LICENSE.txt
-
+###faker.js
+https://github.com/Marak/faker.js/blob/master/MIT-LICENSE.txt
 
 ## Donating
 By donating you are supporting this package and its developer so that he may continue to bring you updates to this and other software he maintains.
 
-[![Support via Gittip][gittip-badge]][digilord]
+[![Support us via Gittip][gittip-badge]][digilord]
 
 [gittip-badge]: https://rawgithub.com/digilord/gittip-badge/master/dist/gittip.png
 [digilord]: https://www.gittip.com/digilord/
+
+[![endorse](https://api.coderwall.com/digilord/endorsecount.png)](https://coderwall.com/digilord)
 
 
