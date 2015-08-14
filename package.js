@@ -5,7 +5,7 @@ Package.describe({
     git: "https://github.com/digilord/meteor-faker.git"
 });
 
-Npm.depends({"faker": "3.0.0"});
+Npm.depends({"faker": "3.0.1"});
 
 Package.onUse(function (api) {
   api.versionsFrom('1.0');
