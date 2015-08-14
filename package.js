@@ -1,11 +1,11 @@
 Package.describe({
     summary: "Faker.js packaged for Meteor. Generate massive amounts of fake data",
     name: "digilord:faker",
-    version: "1.0.5",
+    version: "1.0.6",
     git: "https://github.com/digilord/meteor-faker.git"
 });
 
-Npm.depends({"faker": "2.1.2"});
+Npm.depends({"faker": "3.0.0"});
 
 Package.onUse(function (api) {
   api.versionsFrom('1.0');
